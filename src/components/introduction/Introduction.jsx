@@ -17,7 +17,7 @@ function Introduction() {
       </p>
       <p>
         This brief questionnaire aims to gather your perspective on the target audience, key areas of satisfaction, expectations for the landing page, and the main focus of Digipharm.io.
-        Your feedback will be invaluable in helping me make informed suggestions.
+        Your feedback will be invaluable in helping me make informed suggestions. The form is submitted to me by email using 'Formspree'.
       </p>
       <button onClick={startSurvey}>Start Survey</button>
     </div>

@@ -18,17 +18,17 @@ const questions = [
   },
   {
     id: 3,
-    text: 'What are the main expectations or desires users have when they land on Digipharm.io\'s homepage?',
+    text: 'What are the main ideas/information you want users to have when they land on Digipharm.io\'s homepage?',
     options: ['Clear information about Digipharm\'s solutions/services', 'Easy navigation to key sections/pages', 'Compelling call-to-action for further engagement', 'Other (please specify)']
   },
   {
     id: 4,
     text: 'In your opinion, what is the primary focus of Digipharm.io?',
-    options: ['Showcasing Digipharm\'s solutions/services to potential business customers', 'Providing information and resources for patients', 'Both', 'Other (please specify)']
+    options: ['Showcasing Digipharm\'s solutions/services to potential business customers', 'Providing information and resources for patients', 'Both - it is effectively 2 websites', 'Other (please specify)']
   },
   {
     id: 5,
-    text: 'What are the main pain points or frustrations users experience when interacting with Digipharm.io?',
+    text: 'What are the main pain points or frustrations users/you experience when interacting with Digipharm.io?',
     options: ['Navigation issues', 'Content clarity', 'Performance issues', 'Other (please specify)']
   },
   {
@@ -38,12 +38,12 @@ const questions = [
   },
   {
     id: 7,
-    text: 'How does Digipharm.io compare to competitor websites in terms of design, functionality, and user experience?',
-    options: ['Better', 'Comparable', 'Worse', 'Other (please specify)']
+    text: 'Do you want a contiuous menu throughout the website, with all navigation options available from each page',
+    options: ['Yes', 'No', 'Not Sure', 'Other (please specify)']
   },
   {
     id: 8,
-    text: 'Are there any features or elements on competitor websites that you think we should consider implementing?',
+    text: 'Are there any competitor websites that you like in particular? Which features or elements on the competitor website do you think we should consider implementing? If yes, please give details, thank you.',
     options: ['Yes', 'No', 'Not Sure']
   },
   {
@@ -58,7 +58,7 @@ const questions = [
   },
   {
     id: 11,
-    text: 'Can you walk me through the typical user journey on Digipharm.io, from landing on the homepage to taking action?',
+    text: 'Can you walk me through the journey you would like the user to have on Digipharm.io, from landing on the homepage to taking action?',
     options: ['Yes', 'No', 'Partially']
   },
   {
