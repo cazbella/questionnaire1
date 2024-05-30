@@ -18,7 +18,7 @@ function Summary({ answers, questions }) {
     });
 
     try {
-      const response = await fetch('https://formspree.io/f/{YOUR_FORM_ID}', {
+      const response = await fetch('https://formspree.io/f/mvoejowk', {
         method: 'POST',
         body: formData,
         headers: {
@@ -27,7 +27,7 @@ function Summary({ answers, questions }) {
       });
 
       if (response.ok) {
-        alert('Form submitted successfully!');
+        navigate('/thank-you');
       } else {
         alert('Failed to submit the form.');
       }

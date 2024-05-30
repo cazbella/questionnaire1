@@ -27,10 +27,12 @@ function Question({ question, answer, furtherInfo, onAnswerChange, onNext, onPre
           </label>
         </div>
       ))}
-      <div>
+      <div className="further-information">
         <label>
           Further Information:
+          <br />
           <textarea
+            className="further-info-textarea"
             value={furtherInfo}
             onChange={handleFurtherInfoChange}
           />
@@ -49,4 +51,3 @@ function Question({ question, answer, furtherInfo, onAnswerChange, onNext, onPre
 }
 
 export default Question;
-
