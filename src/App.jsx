@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Routes, Route, useNavigate} from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
+import { Container, Row, Col, Button, Form } from 'react-bootstrap';
 import Question from './components/question/Question';
 import Summary from './components/summary/Summary';
 import Introduction from './components/introduction/Introduction';
@@ -8,27 +9,27 @@ import ThankYou from './components/thankyou/Thankyou';
 const questions = [
   {
     id: 1,
-    text: 'Is the content on Digipharm.io primarily aimed at:',
+    text: '1. Is the content on Digipharm.io primarily aimed at:',
     options: ['Patients', 'Potential business customers (e.g., healthcare professionals, pharmaceutical companies)', 'Both', 'Other (please specify)']
   },
   {
     id: 2,
-    text: 'Which pages on Digipharm.io are you currently most satisfied with, and why?',
+    text: '2. Which pages on Digipharm.io are you currently most satisfied with, and why?',
     options: ['Homepage', 'Solutions/Services pages', 'About Us', 'Other (please specify)']
   },
   {
     id: 3,
-    text: 'What are the main ideas/information you want users to have when they land on Digipharm.io\'s homepage?',
+    text: '3. What are the main ideas/information you want users to have when they land on Digipharm.io\'s homepage?',
     options: ['Clear information about Digipharm\'s solutions/services', 'Easy navigation to key sections/pages', 'Compelling call-to-action for further engagement', 'Other (please specify)']
   },
   {
     id: 4,
-    text: 'In your opinion, what is the primary focus of Digipharm.io?',
+    text: '4. In your opinion, what is the primary focus of Digipharm.io?',
     options: ['Showcasing Digipharm\'s solutions/services to potential business customers', 'Providing information and resources for patients', 'Both - it is effectively 2 websites', 'Other (please specify)']
   },
   {
     id: 5,
-    text: 'What are the main pain points or frustrations users/you experience when interacting with Digipharm.io?',
+    text: '5. What are the main pain points or frustrations you currently have when interacting with Digipharm.io?',
     options: ['Navigation issues', 'Content clarity', 'Performance issues', 'Other (please specify)']
   },
   {
@@ -38,7 +39,7 @@ const questions = [
   },
   {
     id: 7,
-    text: 'Do you want a contiuous menu throughout the website, with all navigation options available from each page',
+    text: 'Do you want a contiuous menu throughout the website, with all navigation options available from each page, i.e. all information available to all users at all times?',
     options: ['Yes', 'No', 'Not Sure', 'Other (please specify)']
   },
   {
@@ -48,7 +49,7 @@ const questions = [
   },
   {
     id: 9,
-    text: 'What are the key conversion metrics we track on Digipharm.io (e.g., lead generation, contact form submissions)?',
+    text: 'What are the key conversion metrics are tracked on Digipharm.io (e.g., lead generation, contact form submissions)?',
     options: ['Lead generation', 'Contact form submissions', 'Newsletter sign-ups', 'Other (please specify)']
   },
   {
@@ -63,7 +64,7 @@ const questions = [
   },
   {
     id: 12,
-    text: 'Are there any bottlenecks or points of drop-off in the user journey that need to be addressed?',
+    text: '12. Are there any bottlenecks or points of drop-off in the user journey that need to be addressed?',
     options: ['Yes', 'No', 'Not Sure']
   }
 ];
@@ -84,7 +85,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <Container className="App">
       <Routes>
         <Route path="/" element={<Introduction />} />
         {questions.map((question, index) => (
@@ -108,7 +109,7 @@ function App() {
         <Route path="/summary" element={<Summary answers={answers} questions={questions} />} />
         <Route path="/thank-you" element={<ThankYou />} />
       </Routes>
-    </div>
+    </Container>
   );
 }
 

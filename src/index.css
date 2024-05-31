@@ -10,6 +10,10 @@ h3 {
   font-size: 1.2em;
 }
 
+.question-container {
+  margin-top: 40px;
+}
+
 button {
   margin: 10px;
   padding: 5px 10px;
